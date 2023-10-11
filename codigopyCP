@@ -1,0 +1,15 @@
+import math
+def funcao(x):
+    return (3*x+1)
+inicio = 1  
+fim = 3     
+delta = 0.0001
+areazona = 0
+x = inicio
+while x < fim:
+    altura = funcao(x)
+    base = delta
+    areazinha = base * altura
+    areazona += areazinha
+    x += delta
+print(areazona)
